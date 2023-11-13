@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seema Nassar">
+    <meta name="description" content="this page is home for Seema Portfolio.">
+    <title>Home</title>
+    <link rel="icon" href="img/SLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <nav id="navContainer"></nav>
+    </header>
+
+    <main>
+        <img src="img/home.png" alt="home" class="imgCenter">
+        <div class="ellipse" id="name"></div>
+        <p id="HiSeema">Hi, I Am Seema.</p>
+        <p id="imgParagraph">I'm a computer engineer. 
+            I specialize in crafting dynamic websites and pages,
+             blending creativity with precision for an innovative online presence.</p>
+        <p id="AboutParagraph">About Me</p>
+        <div class="ellipse" id="about" onclick="openAboutPage()">
+            <img src="img/icons/Arrow_alt_lright.svg" alt="Your SVG Image" width="100" height="100">
+        </div>        
+    </main>
+
+    <footer id="footerContainer"></footer>
+
+
+</body>
+<script>
+       
+            // Load the footer content dynamically
+                fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navContainer').innerHTML = html;
+            });
+        // Load the footer content dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footerContainer').innerHTML = html;
+            });
+   
+    function openAboutPage() {
+        window.location.href = 'about.html';
+    }
+</script>
+</html>
