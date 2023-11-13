@@ -1,0 +1,140 @@
+
+body,html {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #F6F5F1;
+  color: black;
+}
+
+nav {
+  overflow: hidden;
+  position: relative;
+  width: 91.5%;
+  height: 6%;
+  margin-left: 4.3%;
+  margin-top: 1%;
+}
+
+nav a {
+  float: left; 
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+#navContainer {
+  width: 100%; 
+  height: auto;  
+  margin: 0; 
+  padding: 0;
+}
+/* This for navbar.html */
+a.logo {
+  display: flex;
+  position: absolute; 
+  left: 45%; 
+  top: 0;
+  bottom: 0; 
+  align-items: center;
+}
+#imgLogo {
+  width: 77px; 
+  height: 250%;
+}
+/* end */
+
+.imgCenter {
+  position: absolute;
+  left: 26%; 
+  top: 13.5%; 
+}
+.ellipse {
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid rgba(205, 205, 213, 0.11);
+  border-radius: 50%; /* Make it an ellipse */
+}
+#name {
+  width: 225px;
+  height: 225px;
+  left: 235px;
+  top: 210px;
+  background: #F6F5F1;
+}
+#about {
+  width: 126px;
+  height: 126px;
+  left: 1114px;
+  top: 322px;
+  background: #CFCBCB;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  }
+#HiSeema{
+  position: absolute; 
+   left: 100px; 
+   top: 250px; 
+   font-weight: 400; 
+   font-size: 40px;
+   line-height: 53px;
+   text-transform: uppercase;
+   color: #8B8181;
+}
+#imgParagraph{
+  position: absolute;
+  width: 550px;
+  height: 107px;
+  left: 777px;
+  top: 640px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #878282;
+}
+#AboutParagraph {
+  position: absolute;
+  width: 247px;
+  height: 58px;
+  left: 1053px;
+  top: 434px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text horizontally */
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #8B8181;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #333; */
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  bottom: 2%;
+  right: 2%;
+  margin-top: 30%;
+}
+footer a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
