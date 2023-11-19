@@ -122,7 +122,6 @@ a.logo {
 footer {
   display: flex;
   justify-content: space-around;
-  /* background-color: #333; */
   font-size: 20px;
   overflow: hidden;
   position: relative;
@@ -148,54 +147,52 @@ top: 135px;
 background: #F6F5F1;
 }
 #background {
-  /* My Background */
-position: absolute;
-width: 341px;
-height: 126px;
-left: 77px;
-font-weight: 400;
-font-size: 27px;
-line-height: 35px;
-text-transform: uppercase;
-top: 155px;
+  position: absolute;
+  width: 341px;
+  height: 126px;
+  left: 77px;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  text-transform: uppercase;
+  top: 155px;
 }
 #backgroundParagraph {
-position: absolute;
-width: 371px;
-height: 287px;
-left: 45px;
-top: 284px;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-transform: capitalize;
+  position: absolute;
+  width: 371px;
+  height: 287px;
+  left: 45px;
+  top: 284px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
 }
 #underimg{
-width: 614px;
-height: 468px;
-left: 415px;
-top: 567px;
-border: 1px solid rgba(255, 255, 255, 0.11);
-background: #FFFFFF;
+  width: 614px;
+  height: 468px;
+  left: 415px;
+  top: 567px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: #FFFFFF;
 }
 #AboutMe{
-  /* About Me */
-position: absolute;
-width: 512px;
-height: 126px;
-left: 463px;
-top: 625px;
-font-weight: 400;
-font-size: 80px;
-line-height: 105px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #A59E9E;
+  position: absolute;
+  width: 512px;
+  height: 126px;
+  left: 463px;
+  top: 625px;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 105px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #A59E9E;
 }
 #viewportfolio{
   width: 263px;
