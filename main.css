@@ -6,15 +6,17 @@ body,html {
   padding: 0;
   background-color: #F6F5F1;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
   overflow: hidden;
   position: relative;
   width: 91.5%;
-  height: 6%;
+  height: auto;
   margin-left: 4.3%;
-  margin-top: 1%;
+  margin-top: 1%; 
 }
 
 nav a {
@@ -30,37 +32,27 @@ a:hover {
   font-weight: bold;
   cursor: pointer;
 }
-#navContainer {
+/* #navContainer {
   width: 100%; 
   height: auto;  
   margin: 0; 
   padding: 0;
-}
-/* This for navbar.html */
-a.logo {
-  display: flex;
-  position: absolute; 
-  left: 45%; 
-  top: 0;
-  bottom: 0; 
-  align-items: center;
-}
-#imgLogo {
-  width: 77px; 
-  height: 250%;
-}
-/* end */
+} */
 
-.imgCenter {
-  position: absolute;
-  left: 26%; 
-  top: 13.5%; 
+main {
+  margin-top: 4%; 
+  flex: 1;
+}
+ .imgCenter {
+  position: relative;
+  padding-left: 26%; 
+   
 }
 .ellipse {
   box-sizing: border-box;
   position: absolute;
   border: 1px solid rgba(205, 205, 213, 0.11);
-  border-radius: 50%; /* Make it an ellipse */
+  border-radius: 50%; 
 }
 #name {
   width: 225px;
@@ -70,6 +62,7 @@ a.logo {
   border: 1px solid rgba(255, 255, 255, 0.11);
   background: #F6F5F1;
 }
+
 #about {
   width: 126px;
   height: 126px;
@@ -80,16 +73,19 @@ a.logo {
   align-items: center; 
   justify-content: center;
   }
-#HiSeema{
-  position: absolute; 
-   left: 100px; 
-   top: 250px; 
-   font-weight: 400; 
-   font-size: 40px;
-   line-height: 53px;
-   text-transform: uppercase;
-   color: #8B8181;
-}
+  #HiSeema{
+    width: 400px;
+    height: 126px;
+    position: absolute; 
+    left: -120px;
+    top: 50px; 
+    font-weight: 400; 
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #8B8181;
+  }
+
 #imgParagraph{
   position: absolute;
   width: 550px;
@@ -114,22 +110,23 @@ a.logo {
   font-size: 28px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the text horizontally */
+  justify-content: center; 
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #8B8181;
-}
+} 
 footer {
+  
   display: flex;
   justify-content: space-around;
   font-size: 20px;
   overflow: hidden;
-  position: relative;
   width: 100%;
-  bottom: 2%;
-  right: 2%;
-  margin-top: 30%;
+  margin-right: 10%;
+  padding: 20px;
+  text-align: center;
 }
+
 footer a {
   float: left;
   display: block;
@@ -138,6 +135,78 @@ footer a {
   padding: 14px 16px;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  
+  .imgCenter {
+      padding-left: 5%; 
+      width: 50%;
+      height: auto;
+      padding-left: 25%;
+  }
+  
+  #name {
+      width: 100px;
+      height: 100px;
+      left: 25%;
+      top: 12%;
+      transform: translateX(-60%);   
+  }
+
+  #about {
+      width: 60px;
+      height: 60px;
+      left: 50%;
+      top: 65%;
+      transform: translateX(-50%);
+  }
+  #AboutParagraph {
+    width: 150px;
+    height: 40px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #HiSeema {
+      left: 7%;
+      top: 10%;
+      font-size: 11px;
+
+  }
+
+  #imgParagraph {
+      width: auto;
+      height: auto;
+      left: 10%;
+      top: 50%;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+  }
+  footer {
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    margin-top: 28%;
+    transform: translateY(20%);
+    align-items: center;
+
+  }
+  footer a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  } 
+
+}
+ 
 /* for about.html page */
 #backgroundCircle{
 width: 126px;
