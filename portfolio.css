@@ -1,3 +1,15 @@
+body,html {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F1;
+
+  }
+main {
+    margin-top: 4%; 
+    flex: 1;
+  }
 .top {  
     position: absolute;
     width: 100%;
@@ -19,24 +31,19 @@
     left: 44.57px;
     top: 29.53px;
     background: #BDCCD4;
-}
-#portfolio {
-    position: absolute;
-    width: 379.74px;
-    height: 143.3px;
-    left: 15px;
-    top: -40px;
     font-weight: 400;
     font-size: 40px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
+    justify-content: left; /* Center horizontally */
+    padding: 0 50px 0 25px; /* Adjust padding to include an extra 20px on the left */
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #375C6F;  
+    color: #375C6F; 
 }
+
 #portfolioParagraph{
 position: absolute;
 width: 537px;
@@ -187,14 +194,15 @@ color: #F5F5F5;
 /*  */
 .projects-container {
     position: absolute;
-    width: 97%;
-    height: 900px;
+    width: auto;
+    height: auto;
     top: 520px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px; 
     padding: 0 15px; 
+    z-index: 100;
 }
 .projects-container > div {
     position: relative;
@@ -258,4 +266,97 @@ color: #F5F5F5;
     letter-spacing: 0.03em;
     text-transform: capitalize;
     color: #375C6F;
+    
+}
+footer {
+    margin-top: 45%;
+    flex: 2;
+    /* top: 45%;  */
+  }
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .top {
+        top: 10%;
+        height: 50%;
+            
+    }
+
+    .portfolioDiv {
+        width: 90%; 
+        height: 40%;
+        margin-bottom: 20px; 
+    }
+    #portCircle {
+        width: 67.27px;
+        height: 61.64px;
+        left: 0;
+        top:0;
+        font-size: 18px;
+    }
+ 
+    #portfolioParagraph{
+    padding-top: 30px;
+    position: absolute;
+    left: -5px;
+    top: 5px; 
+    width: 68%; 
+    font-size: 14px; 
+    line-height: 16px;
+    }
+
+/* ///// */
+
+    .grid-container {
+        margin-bottom: 20px; 
+    }
+
+    .design-website {
+        margin-top: 250px;
+        margin-left: -57%;
+   }
+
+
+    .design .location-img {
+        display: none; /* Hide the location image on smaller screens */
+    }
+
+    .design > img:last-child {
+        width: auto; 
+        margin-top: 250px;
+        margin-left: -206%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* Change to a single column layout */
+        grid-template-rows: repeat(5, 1fr); /* Adjust the number of rows */
+        gap: 0; /* Add some gap between items */
+        padding: 0 ; /* Adjust padding */
+        text-align: center; /* Center the text */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        margin-top: 200px; /* Add some space between the elements */
+        height: auto;
+        overflow-y: hidden;
+        
+        
+    }
+
+    .projects-container > div {
+        width: 90%; 
+        margin: 0 auto; 
+        height: auto; 
+    }
+
+    .projects-container > div img {
+        width: 95%; 
+        height: auto;
+    }
+
+    .projects-container > div p {
+        font-size: 18px; 
+    }
+    /*  */
+    #footerContainer3{
+    margin-top: 620%;
+  }
 }

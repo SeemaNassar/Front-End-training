@@ -9,6 +9,10 @@ body,html {
   display: flex;
   flex-direction: column;
 }
+header {
+  text-align: left;
+}
+
 
 nav {
   overflow: hidden;
@@ -32,17 +36,13 @@ a:hover {
   font-weight: bold;
   cursor: pointer;
 }
-/* #navContainer {
-  width: 100%; 
-  height: auto;  
-  margin: 0; 
-  padding: 0;
-} */
+
 
 main {
   margin-top: 4%; 
   flex: 1;
 }
+
  .imgCenter {
   position: relative;
   padding-left: 26%; 
@@ -61,6 +61,14 @@ main {
   top: 210px;
   border: 1px solid rgba(255, 255, 255, 0.11);
   background: #F6F5F1;
+  font-weight: 400; 
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #8B8181;
+  display: flex;
+  align-items: center;
+  
+  
 }
 
 #about {
@@ -72,18 +80,6 @@ main {
   display: flex; 
   align-items: center; 
   justify-content: center;
-  }
-  #HiSeema{
-    width: 400px;
-    height: 126px;
-    position: absolute; 
-    left: -120px;
-    top: 50px; 
-    font-weight: 400; 
-    font-size: 40px;
-    line-height: 53px;
-    text-transform: uppercase;
-    color: #8B8181;
   }
 
 #imgParagraph{
@@ -116,7 +112,7 @@ main {
   color: #8B8181;
 } 
 footer {
-  
+  position: relative;
   display: flex;
   justify-content: space-around;
   font-size: 20px;
@@ -125,6 +121,7 @@ footer {
   margin-right: 10%;
   padding: 20px;
   text-align: center;
+  flex: 2;
 }
 
 footer a {
@@ -135,77 +132,7 @@ footer a {
   padding: 14px 16px;
   text-decoration: none;
 }
-@media only screen and (max-width: 768px) {
-  
-  .imgCenter {
-      padding-left: 5%; 
-      width: 50%;
-      height: auto;
-      padding-left: 25%;
-  }
-  
-  #name {
-      width: 100px;
-      height: 100px;
-      left: 25%;
-      top: 12%;
-      transform: translateX(-60%);   
-  }
 
-  #about {
-      width: 60px;
-      height: 60px;
-      left: 50%;
-      top: 65%;
-      transform: translateX(-50%);
-  }
-  #AboutParagraph {
-    width: 150px;
-    height: 40px;
-    left: 50%;
-    top: 70%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    font-weight: bold;
-  }
-  #HiSeema {
-      left: 7%;
-      top: 10%;
-      font-size: 11px;
-
-  }
-
-  #imgParagraph {
-      width: auto;
-      height: auto;
-      left: 10%;
-      top: 50%;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: left;
-  }
-  footer {
-
-    display: flex;
-    justify-content: space-around;
-    font-size: 12px;
-    overflow: hidden;
-    width: 100%;
-    padding: 10px;
-    margin-top: 28%;
-    transform: translateY(20%);
-    align-items: center;
-
-  }
-  footer a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-  } 
-
-}
  
 /* for about.html page */
 #backgroundCircle{
@@ -213,32 +140,32 @@ width: 126px;
 height: 126px;
 left: 45px;
 top: 135px;
+text-align: center;
 background: #F6F5F1;
 }
 #background {
-  position: absolute;
+  position: relative;
   width: 341px;
   height: 126px;
-  left: 77px;
   font-weight: 400;
   font-size: 27px;
   line-height: 35px;
+  top: 20px;
   text-transform: uppercase;
-  top: 155px;
 }
 #backgroundParagraph {
-  position: absolute;
+  position: relative;
   width: 371px;
   height: 287px;
-  left: 45px;
-  top: 284px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   display: flex;
-  align-items: center;
+  align-items: start;
+  text-align: left;
   text-transform: capitalize;
 }
+
 #underimg{
   width: 614px;
   height: 468px;
@@ -246,23 +173,19 @@ background: #F6F5F1;
   top: 567px;
   border: 1px solid rgba(255, 255, 255, 0.11);
   background: #FFFFFF;
-}
-#AboutMe{
-  position: absolute;
-  width: 512px;
-  height: 126px;
-  left: 463px;
-  top: 625px;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 105px;
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 105px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #A59E9E;
+  z-index: 1;
 }
+
 #viewportfolio{
   width: 263px;
   height: 263px;
@@ -278,4 +201,156 @@ background: #F6F5F1;
 }
 #viewportfolio:hover {
   cursor: pointer;
+}
+
+#skillsSection {
+  /* background-color: #F6F5F1; */
+  padding: 10px 180px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#skillsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+}
+
+#skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.skillItem {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100px;
+}
+#me{
+  left:3.5%; 
+}
+/* ///////// */
+@media only screen and (max-width: 768px) {
+  
+  .imgCenter {
+    padding-left: 5%; 
+    width: 50%;
+    height: auto;
+    padding-left: 25%;
+  }
+  
+  #name {
+    width: 100px;
+    height: 100px;
+    left: 25%;
+    top: 12%;
+    transform: translateX(-60%);  
+    font-size: 11px; 
+  }
+
+  #about {
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+  }
+  #AboutParagraph {
+    width: 150px;
+    height: 40px;
+    left: 50%;
+    top: 71%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+  #imgParagraph {
+    width: auto;
+    height: auto;
+    left: 10%;
+    top: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+  /*  */
+  #backgroundCircle{
+    width: 90px;
+    height: 90px;
+    left: 20px;
+    top: 80px;
+  }
+  #background {
+    width: 240px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    right: 20px;
+    top: 15px;
+  }
+  #backgroundParagraph {
+    position: relative;
+    width: 170px;
+    height: auto;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  #me{
+    left: 20%;
+  }
+  #underimg{
+    width: 218px;
+    height: 150px;
+    left: 192px;
+    top: 260px;
+    font-size: 30px;
+  }
+  #skillsSection {
+    top: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  #skillsTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+    
+  .skillItem {
+    padding: 10px;
+    width: 70px;
+  }
+  #viewportfolio{
+    width: 163px;
+    height: 163px;
+    left: 130px;
+    top: 775px;
+    font-size: 14px;
+  }
+    /*  */
+  footer {
+    font-size: 12px;
+    width: 90%;
+    padding: 10px;
+    top: 10px;
+    margin-top: 32%;
+    margin-left: 10px;
+    transform: translateY(20%);
+    position: relative;
+
+  }
+
 }

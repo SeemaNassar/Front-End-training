@@ -20,8 +20,8 @@
     <main>
         <div class="top">
             <div class="portfolioDiv">
-                <div class="ellipse" id="portCircle"></div>
-                <p id="portfolio">Portfolio</p>
+                <div class="ellipse" id="portCircle">Portfolio</div>
+               
                 <p id="portfolioParagraph">As a recent graduate with a passion for coding, 
                     I've journeyed through projects using HTML, CSS, PHP, Java, Flutter, React,
                     and NodeJS. From my academic endeavors to personal coding adventures, 
@@ -77,9 +77,10 @@
             </div>
             
         </div> 
+        
     </main>
 
-    <footer id="footerContainer" style="top: 500px;"></footer>
+    <footer id="footerContainer3" ></footer>
 </body>
 <script>
        
@@ -93,7 +94,7 @@
     fetch('footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('footerContainer').innerHTML = html;
+            document.getElementById('footerContainer3').innerHTML = html;
         });
    
     // Get all elements with class 'project'
