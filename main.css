@@ -264,6 +264,7 @@ background: #F6F5F1;
     left: 50%;
     top: 65%;
     transform: translateX(-50%);
+    z-index: 2;
   }
   #AboutParagraph {
     width: 150px;
