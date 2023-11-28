@@ -173,3 +173,118 @@
 .img-right-container  a {
     color: #375C6F;
 }
+
+/*  */
+@media only screen and (max-width: 768px) {
+    .top-container{
+        position: absolute;
+        width: 80%;
+        height: 44%;
+        left: 10%;
+        top: 88px;
+    }
+    .top-container > div{
+        width: 79.46px;
+        height: 81px;
+        left: 14%;
+        top: 10%; 
+    }
+    .top-container > p:first-of-type {
+        width: 99%;
+        height: 30%;
+        left: -4%;
+        font-size: 20px;
+        margin-bottom: 15%;
+    }
+    .top-container >p:last-of-type {
+        width: 70%;
+        height: 60%;
+        bottom: 20%;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+    /* /////////// */
+    .top-right-container {
+        width: 90%;
+        height: 30%;
+        left:5%;
+        top: 55%;
+
+    }
+
+    .top-right-container > div:not(:first-child) {
+        position: relative;
+        width: 50%;
+        height: 0;
+        background: #d5dce1;
+        box-shadow: 0 0 2px #ffffff; 
+        border-top: 60px solid transparent; /* Adjust the height of the triangle */
+        border-bottom: 60px solid transparent; /* Adjust the height of the triangle */
+        border-right: 50px solid #FFFFFF; /* Adjust the color and width of the border */
+        justify-content:space-around;
+    }
+
+    .top-right-container > div:not(:first-child):nth-child(odd) {
+        margin-top: -10px; 
+        margin-bottom: -10px;
+        
+    }
+    
+    .top-right-container > div:first-child p {
+        font-size: 18px;
+    }
+    .top-right-container > div:not(:first-child) img {
+        width: 70%;
+
+      }
+      .top-right-container > div:not(:first-child) p {
+        width: 20%;
+        font-size: 14px;
+      }
+    
+    /*   /////////   */
+    .img-left-container {
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 130%;
+        gap: 10px;
+        
+    }
+    .img-left-container > p {
+        width: 30%;
+        height: 10%;
+        font-size: 20px;
+    }
+    .img-left-container > img {
+        width: 100%;
+        height: 40%;
+    }
+    /*      ////////     */
+    .img-right-container {
+        
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 300%;
+        gap: 10px;
+       
+    }
+    .img-right-container > p {
+        width: 60%;
+        height: 10%;
+        font-size: 22px;
+    }
+    .img-right-container > img{
+        width: 100%;
+        height: 50%;
+    }
+    .img-right-container li {
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 35px; 
+    } 
+    
+}

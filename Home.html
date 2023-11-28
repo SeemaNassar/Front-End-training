@@ -29,25 +29,16 @@
         </div>        
     </main>
 
-    <footer id="footerContainer"></footer>
-
 
 </body>
-<script>
-       
-            // Load the footer content dynamically
-                fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('navContainer').innerHTML = html;
-            });
-        // Load the footer content dynamically
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footerContainer').innerHTML = html;
-            });
-   
+<script>   
+    // Load the navbar content dynamically
+        fetch('navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navContainer').innerHTML = html;
+    });
+
     function openAboutPage() {
         window.location.href = 'about.html';
     }

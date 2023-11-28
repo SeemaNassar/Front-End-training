@@ -8,6 +8,8 @@
     <title>Home</title>
     <link rel="icon" href="img/SLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body style="background-color: #FFFFFF">
@@ -53,31 +55,45 @@
                 <div class="skillItem" style="background-color: #d6d6d6;">Working Under Pressure</div>
             </div>
         </div>
-       
+        <div class="contact-page" id="contact">
+            <h2>Get in touch</h2>
+            <div class="contact-info">
+                <div class="item">
+                    <a href="https://www.facebook.com/sema.nassar.7" target="_blank">
+                      <i class="icon fab fa-facebook"></i></a> &nbsp; &nbsp;
+                    <a href="https://www.linkedin.com/in/seema-nassar-43698224b" target="_blank">
+                      <i class="icon fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="item">
+                    <i class="icon fas fa-envelope"></i>
+                    seemanassar3@gmail.com
+                </div>
+            </div>
+            <form action="https://formspree.io/f/mknllbqe" method="POST" class="contact-form">
+                <input type="text" class="textb" placeholder="Your Name" name="name" id="namee">
+                <input type="email" class="textb" placeholder="Your Email" name="_replyto" id="email">
+                <textarea placeholder="Your Message" name="message" id="message"></textarea>
+                <input type="submit" class="btn" value="Send">
+            </form>
+        </div>
             
     </main>
-
-    <footer id="footerContainer"></footer>
 
 
 </body>
 <script>
-       
-            // Load the footer content dynamically
-                fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('navContainer').innerHTML = html;
-            });
-        // Load the footer content dynamically
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footerContainer').innerHTML = html;
-            });
-   
+    // Load the navbar content dynamically
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navContainer').innerHTML = html;
+    });
+
     function openPortfolioPage() {
         window.location.href = 'Portfolio.html';
     }
+
+
 </script>
 </html>

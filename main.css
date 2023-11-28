@@ -111,28 +111,6 @@ main {
   text-transform: capitalize;
   color: #8B8181;
 } 
-footer {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-  overflow: hidden;
-  width: 100%;
-  margin-right: 10%;
-  padding: 20px;
-  text-align: center;
-  flex: 2;
-}
-
-footer a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
  
 /* for about.html page */
 #backgroundCircle{
@@ -340,18 +318,6 @@ background: #F6F5F1;
     left: 130px;
     top: 775px;
     font-size: 14px;
-  }
-    /*  */
-  footer {
-    font-size: 12px;
-    width: 90%;
-    padding: 10px;
-    top: 10px;
-    margin-top: 32%;
-    margin-left: 10px;
-    transform: translateY(20%);
-    position: relative;
-
   }
 
 }

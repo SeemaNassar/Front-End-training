@@ -79,8 +79,6 @@
         </div> 
         
     </main>
-
-    <footer id="footerContainer3" ></footer>
 </body>
 <script>
        
@@ -89,12 +87,6 @@
         .then(response => response.text())
         .then(html => {
             document.getElementById('navContainer').innerHTML = html;
-        });
-    // Load the footer content dynamically
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('footerContainer3').innerHTML = html;
         });
    
     // Get all elements with class 'project'
