@@ -35,11 +35,8 @@ nav > .menu-content a img {
     margin-left: 85%;
 }
 
-/* Media query for screens up to 768px (typical iPad portrait width) */
-@media only screen and (max-width: 768px) {
-    /* nav {
-        position: relative; /* Adjust the position of the menu content */
-  
+@media only screen and (max-width: 970px) {
+
     .menu-toggle {
         display: block; /* Show the menu button on smaller screens */
        cursor: pointer;
