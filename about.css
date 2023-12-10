@@ -1,0 +1,247 @@
+
+body,html {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #F6F5F1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  text-align: left;
+}
+
+
+nav {
+  overflow: hidden;
+  position: relative;
+  width: 91.5%;
+  height: auto;
+  margin-left: 4.3%;
+  margin-top: 1%; 
+}
+
+nav a {
+  float: left; 
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+main {
+  margin-top: 4%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ellipse {
+  box-sizing: border-box;
+  border: 1px solid rgba(205, 205, 213, 0.11);
+  border-radius: 50%; 
+  
+} 
+
+#backgroundCircle{
+  width: 126px;
+  height: 126px;
+  text-align: center;
+  background: #F6F5F1;
+}
+#background {
+  width: 318px;
+  height: 85px;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+#backgroundParagraph {
+  width: 90%;
+  height: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 20px;
+} 
+
+ #viewportfolio{
+  width: 283px;
+  height: 253px;
+  background: #FFFFFF;
+  border: 1px solid #CDCDD5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 2;
+} 
+#viewportfolio:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-container > :first-child {
+  align-self: self-start ;
+}
+.ellipse, #me {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.img-container {
+  width: 90%;
+  margin-bottom: 30px; 
+
+ 
+}
+#underimg{
+  /* width: 91%;
+  height:30%; */
+  display: none;
+}
+.img-container img {
+  width: 100%; 
+  height: auto;
+  display: block; 
+}
+.img-container .ellipse {
+  display: block;
+  position: absolute; 
+  bottom: -14%; 
+  left: 4.5%; 
+ 
+}
+
+#skillsSection {
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#skillsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a0a0a;
+  margin-bottom: 30px;
+}
+
+#skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.skillItem {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100px;
+}
+#me{
+  left:3.5%; 
+}
+
+@media (min-width: 1020px) {
+  .container {
+    flex-direction: row; 
+    align-items: stretch; 
+    justify-content: space-around;
+    width: 95%;
+
+  }
+  .img-container{
+    position: relative; 
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 100%;
+  }
+  .container > :last-child{
+   align-self: center;
+  }
+
+  .img-container{
+    width: 40%;
+
+  }
+
+  .img-container .ellipse {
+    bottom: -22%; 
+    left: -.5%;  
+  }
+  #underimg{
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #A59E9E;
+    z-index: 1;
+    font-size: 46px;
+    width: 101%;
+    height: 60%;
+  }
+  #backgroundParagraph {
+    width: 370px;
+    height: 287px; 
+  }
+  #skillsSection {
+    padding: 40px 180px;
+
+  }
+}
+@media only screen and (min-width: 500px){
+  .img-container {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 970px)  {
+  nav{
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 971px) and (max-width: 1300px){
+  nav {
+    font-size: 16px;
+  }
+}

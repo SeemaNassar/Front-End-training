@@ -103,7 +103,7 @@ textarea{
 @media screen and (max-width: 980px){
   .contact-page{
     max-width: 100%;
-    margin-top: 55%;
+    margin-top: 10px;
   }
   h2{
     font-size: 30px;

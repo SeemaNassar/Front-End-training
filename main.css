@@ -218,7 +218,7 @@ background: #F6F5F1;
   left:3.5%; 
 }
 /* ///////// */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
   
   .imgCenter {
     padding-left: 5%; 

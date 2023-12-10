@@ -7,7 +7,7 @@
     <meta name="description" content="this page is about me.">
     <title>Home</title>
     <link rel="icon" href="img/SLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -19,23 +19,27 @@
     </header>
 
     <main>
-        <div class="ellipse" id="backgroundCircle">
-            <p id="background">My Background</p>
-            <p id="backgroundParagraph">As a front-end developer, I have experience turning ideas into stunning,
-                 interactive web experiences. With my expertise in CSS, HTML, and JavaScript, 
-                 I specialize in creating seamless user interfaces and engaging designs. 
-                 For more detail and a passion for clean, efficient code,
-                  I ensure that every project Not only meets expectations, but exceeds them.
-                   From crafting responsive layouts to implementing dynamic functionality,
-                    my commitment is to elevate the user experience through front-end development prowess.
-            </p>
-        </div>
-        <div class="img-container">
-            <img src="img/s.png" alt="Seema" class="imgCenter" id="me">
-            <div class="ellipse" id="underimg">About Me</div>
-        </div>
+        <div class="container">
+            <div class="left-container">
+                <div class="ellipse" id="backgroundCircle">
+                    <p id="background">My Background</p>
+                </div>
+                <p id="backgroundParagraph">As a front-end developer, I have experience turning ideas into stunning,
+                    interactive web experiences. With my expertise in CSS, HTML, and JavaScript, 
+                    I specialize in creating seamless user interfaces and engaging designs. 
+                    For more detail and a passion for clean, efficient code,
+                    I ensure that every project Not only meets expectations, but exceeds them.
+                    From crafting responsive layouts to implementing dynamic functionality,
+                        my commitment is to elevate the user experience through front-end development prowess.
+                </p>
+            </div>
+            <div class="img-container">
+                <img src="img/s.png" alt="Seema" class="imgCenter" id="me">
+                <div class="ellipse" id="underimg">About Me</div>
+            </div>
 
-        <div class="ellipse" id="viewportfolio" onclick="openPortfolioPage()">View My Portfolio</div>   
+            <div class="ellipse" id="viewportfolio" onclick="openPortfolioPage()">View My Portfolio</div>  
+        </div> 
         <div id="skillsSection">
             <h2 id="skillsTitle">Skills</h2>
             <div id="skillsList">
