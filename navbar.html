@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seema Nassar">
+    <meta name="description" content="this is a navBar.">
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+        <div class="menu-content">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Home.html">
+                <img src="img/SLogo.png" alt="SeemaNassar">
+            </a>
+            <a href="about.html#skillsSection">Skills</a>
+            <a href="about.html#contact">Contact</a>
+            <a href="SeemaCV.pdf" download="SeemaNassar-CV">Download CV</a>
+        </div>
+    </nav>
+</body>
+<script>
+    function toggleMenu() {
+    var menuContent = document.querySelector('.menu-content');
+    menuContent.classList.toggle('show');
+}
+</script>
+</html>

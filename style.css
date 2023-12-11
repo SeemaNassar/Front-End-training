@@ -1,0 +1,121 @@
+
+.contact-page{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  background: url(img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.contact-page > h2{
+  text-align: start;
+}
+
+h2{
+  width: 100%;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #375C6F;
+  font-size: 60px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+  margin-right: 40px;
+}
+
+.item{
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #375C6F;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #a6a7a9;
+  text-align: center;
+  color: #375C6F;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  align-content: center;
+  
+  
+}
+
+.textb{
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  background-color: #a6a7a9;
+  border: none;
+  color: #375C6F;
+  margin-bottom: 20px;
+}
+
+.textb::placeholder ,textarea::placeholder{
+  color: rgb(141, 95, 103);
+}
+
+
+textarea{
+  width: calc(85% - 10px); /* Adjust the width as needed */
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #a6a7a9;
+  border: none;
+  color: #375C6F;
+  margin-bottom: 20px;
+}
+
+
+.btn{
+  width: 120px;
+  height: 40px;
+  /* margin-left: auto; */
+  background-color: rgb(141, 95, 103);
+  border: none;
+  color: rgb(170, 168, 168);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid rgb(141, 95, 103);
+  transition: .3s linear;
+
+}
+
+.btn:hover{
+  background-color: rgb(170, 168, 168);
+  color: #375C6F;
+}
+
+@media screen and (max-width: 980px){
+  .contact-page{
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info, .contact-form{
+    flex: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  textarea, .textb{
+    width: 100%;
+  }
+}

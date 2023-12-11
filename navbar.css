@@ -1,0 +1,95 @@
+
+.menu-toggle {
+    display: none; /* Initially hide the menu button on larger screens */
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.menu-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu-content a:nth-child(4) {
+    display: flex;
+    position: absolute; 
+    left: 45%; 
+    top: 0;
+    bottom: 0; 
+    align-items: center;
+}
+
+nav > .menu-content a img {
+    width: 77px; 
+    height: 230%;
+}
+
+.menu-content a:last-child {
+    position: absolute; 
+    text-decoration: underline; 
+    margin-left: 85%;
+}
+
+@media only screen and (max-width: 970px) {
+
+    .menu-toggle {
+        display: block; /* Show the menu button on smaller screens */
+       cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column; /* Change to vertical layout on smaller screens */
+        align-items: center;
+        justify-content: center;
+        display: none; /* Initially hide the menu links on smaller screens */
+    }
+    nav > .menu-content a img {
+        display: none;    
+    }
+    .menu-content a:last-child {
+        position:relative; 
+        text-decoration: underline; 
+        margin: 0;
+    }
+    .menu-content.show {
+        display: flex;
+        position: fixed;
+        top: 8%;
+        left: 0;
+        width: 40%;
+        height: auto;
+        background-color: #ffffff; /* White background */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        z-index: 100; /* Set a high z-index to appear above other content */
+        overflow: hidden; /* Hide overflowing content */
+        border-bottom: 1px solid #ccc; /* Bottom border for separation */
+        border-radius: 10px 10px 0 0; /* Rounded corners on top */
+    }
+
+    .menu-content.show a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        border-bottom: 1px solid #ccc; /* Border between menu items */
+    }
+
+    .menu-content.show a:last-child {
+        border-bottom: none; /* Remove border for the last menu item */
+    }
+
+    .menu-content.show a:hover {
+        background-color: #f0f0f0; /* Highlight on hover */
+    }
+}

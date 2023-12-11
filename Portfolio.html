@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seema Nassar">
+    <meta name="description" content="this is main Portfolio page.">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/SLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav id="navContainer"></nav>
+    </header>
+
+    <main>
+        <div class="top">
+            <div class="portfolioDiv">
+                <div class="ellipse" id="portCircle">Portfolio</div>
+               
+                <p id="portfolioParagraph">As a recent graduate with a passion for coding, 
+                    I've journeyed through projects using HTML, CSS, PHP, Java, Flutter, React,
+                    and NodeJS. From my academic endeavors to personal coding adventures, 
+                    I've dabbled in crafting design systems, building websites, and bringing apps to life. <br> <br>
+                    Come explore the start of my coding story.Click through to discover some of my earliest projects.
+                </p>
+            </div>
+            <div class="design">
+                <div class="grid-container">
+                    <div class="grid-item"><img src="img/icons/Upload.svg" alt="Upload"></div>
+                    <div class="grid-item">Upload file.</div>
+                    <div class="grid-item"><img src="img/icons/Check_round_fill.svg" alt="checkBox" ></div>
+                    <div class="grid-item">Make it pop.</div>
+                </div>
+                <div class="design-website">
+                    <img src="img/table.png" alt="table">
+                    <p>A Modern dinner Table.</p>
+                    <img src="img/icons/Favorite_light.svg" alt="Favorite">
+                    <p>Add to wish list</p>
+                    <p>590$</p>
+                    <button>Buy now</button>
+                    <button>More details</button>
+                </div>
+                <img src="img/icons/Pin_alt.svg" alt="location" class="location-img">
+                <img src="img/app.png" alt="app">
+            </div>
+        </div>
+        <div class="projects-container">
+            <div id="pharmacy" class="project">
+                <img src="img/SP1.png" alt="pharmacy">
+                <p>Smart Pharmacy</p>
+                <p>Website</p>
+            </div>
+            <div id="flycar" class="project">
+                <img src="img/FC.png" alt="flycar">
+                <p>FlyCar</p>
+                <p>Mobile Application</p>
+            </div>
+            <div id="gates" class="project">
+                <img src="img/gate.png" alt="gates">
+                <p>Gates</p>
+                <p>AI project</p>
+            </div>
+            <div id="inventory" class="project">
+                <img src="img/IS.png" alt="inventory-system">
+                <p>Inventory System</p>
+                <p>Application</p>
+            </div>
+            <div id="expresscart" class="project">
+                <img src="img/HW.jpeg" alt="expresscart">
+                <p>ExpressCart</p>
+                <p>Hardware project</p>
+            </div>
+            
+        </div> 
+        
+    </main>
+</body>
+<script>
+       
+    // Load the navbar content dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navContainer').innerHTML = html;
+        });
+   
+    // Get all elements with class 'project'
+    const projects = document.querySelectorAll('.project');
+    // Add click event listener to each project
+    projects.forEach(project => {
+        project.addEventListener('click', function() {
+            // Get the project ID from the clicked div's id attribute
+            const projectId = this.id;
+
+            // Navigate to the new page with the corresponding project ID
+            window.location.href = `${projectId}.html`;
+        });
+    });
+</script>
+</html>

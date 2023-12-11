@@ -1,0 +1,296 @@
+body, html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #F6F5F1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: left;
+}
+
+nav {
+  overflow: hidden;
+  position: relative;
+  width: 91.5%;
+  height: auto;
+  margin-left: 4.3%;
+  margin-top: 1%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 10%;
+  top: 16%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgCenter {
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+#name {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  top: 80px;
+  left: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: #F6F5F1;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #8B8181;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.ellipse {
+  box-sizing: border-box;
+  border: 1px solid rgba(205, 205, 213, 0.11);
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+#imgParagraph {
+
+  position: relative;
+  width: 550px;
+  height: auto;
+  left: 23.5%;
+  top: 530px;
+  z-index: 2;
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #878282;
+}
+/*  */
+
+.about-container {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 83%; 
+  transform: translateX(-50%); /* Centered horizontally */
+  top: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about {
+  width: 126px;
+  height: 126px;
+  background: #CFCBCB;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+
+}
+#AboutParagraph {
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #8B8181;
+} 
+  
+  /*  */
+@media only screen and (max-width: 970px) {
+  main {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-container {
+    order: 1;
+    width: 100%;
+    height: auto;
+    left: -10%;
+    top: 10%;
+  }
+
+  .imgCenter {
+    width: 60%;
+  }
+
+  #name {
+    width: 100px;
+    height: 100px;
+    top: 35px;
+    left: 50px;
+    font-size: 11px;
+  }
+
+  #imgParagraph {
+    order: 2;
+    position: absolute;
+    width:80%;
+    height: auto;
+    left: 50px;
+    margin-top: -100px;
+    /* top: 430px; */
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    
+  }
+/*  */
+  .about-container {
+    order: 3;
+    left: 50%; 
+    top: 570px;
+  }
+  #about {
+    width: 70px;
+    height: 70px;
+  }
+  #AboutParagraph {
+    font-size: 14px;
+    font-weight: bold;
+  } 
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 540px) {
+  #imgParagraph {
+    margin-top: -30px;
+  }
+  
+  .about-container {
+    top: 650px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 970px)  {
+  nav{
+    font-size: 25px;
+  }
+
+  #name {
+    width: 180px;
+    height: 180px;
+    top: 45px;
+    left: 70px;
+    font-size: 18px;
+  }
+  #imgParagraph {
+    padding: 15px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 240px;
+  }
+  .about-container {
+    top: 900px;
+  }
+  #about {
+    width: 90px;
+    height: 90px;
+  }
+  #AboutParagraph {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 970px){
+  #imgParagraph {
+    font-size: 25px;
+    margin-top: 380px;
+  
+  }
+
+  .about-container {
+    top: 1080px;
+  }
+}
+@media only screen and (min-width: 971px) and (max-width: 1300px){
+  nav {
+    font-size: 16px;
+  }
+
+  .img-container {
+    width: 70%;
+    height: auto;
+    left: -3%;
+    top: 14%;
+  }
+
+  .imgCenter {
+    width: 70%;
+  }
+
+  #name {
+    width: 180px;
+    height: 180px;
+    top: 70px;
+    left: 90px;
+    font-size: 20px;
+  }
+
+  #imgParagraph {
+    width: 450px;
+    height: auto;
+    left: 23.5%;
+    top: 430px;
+    font-size: 18px;
+  }
+
+  .about-container {
+    left: 80%; 
+    top: 250px;
+  }
+
+  #about {
+    width: 100px;
+    height: 100px;
+  }
+
+  #AboutParagraph {
+    font-size: 22px;
+  } 
+}
+

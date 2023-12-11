@@ -1,0 +1,290 @@
+.top-container{
+    position: absolute;
+    width: 552px;
+    height: 373px;
+    left: 48px;
+    top: 88px;
+    background: #5F889D;
+    border-radius: 51px;
+}
+.top-container > div{
+    width: 89.46px;
+    height: 91px;
+    left: 58.42px;
+    top: 47px;
+    background: #BDCCD4;
+}
+.top-container > p:first-of-type {
+    position: relative;
+    width: 341.39px;
+    height: 143px;
+    left: 18px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #375C6F;
+}
+.top-container >p:last-of-type {
+    position: relative;
+    width: 435.41px;
+    height: 237px;
+    left: 82.15px;
+    bottom: 20%;
+    /* top: 71px; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #F5F5F5;
+}
+/*  /////   */
+.top-right-container {
+    position: absolute;
+    width: 543px;
+    height: 427px;
+    left: 786px;
+    top: 133px;
+    display: flex;
+    flex-direction: column;  
+}
+.top-right-container > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 0; 
+  }
+.top-right-container > div:not(:first-child) {
+    position: relative;
+    width: 266px;
+    height: 0;
+    background: #d5dce1;
+    box-shadow: 0 0 2px #ffffff; 
+    border-top: 60px solid transparent; /* Adjust the height of the triangle */
+    border-bottom: 60px solid transparent; /* Adjust the height of the triangle */
+    border-right: 80px solid #FFFFFF; /* Adjust the color and width of the border */
+    justify-content:space-around;
+}
+.top-right-container > div:nth-child(even) {
+    margin-left: auto;
+    background: #C6CED3;
+    z-index: 2; 
+}
+.top-right-container > div:not(:first-child):nth-child(odd) {
+    margin-top: -15px; 
+    margin-bottom: -15px;
+    z-index: 1; 
+}
+
+.top-right-container > div:first-child p {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #375C6F;
+}
+.top-right-container > div:not(:first-child) img {
+    width: 168px;
+    height: 94px;
+    border-radius: 15px;
+  }
+  .top-right-container > div:not(:first-child) p {
+    width: 56px;
+    height: 15.88px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #375C6F;
+  }
+
+/*   /////////   */
+.img-left-container {
+    position: absolute;
+    width: 600px;
+    height: 1670px;
+    left: 30px;
+    top: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.img-left-container > p {
+    width: 279px;
+    height: 80px;
+    font-size: 36px;
+    line-height: 39px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #375C6F;
+}
+.img-left-container > img {
+    width: 600px;
+    height: 300px;
+    border-radius: 27px;
+}
+/*      ////////     */
+.img-right-container {
+    position: absolute;
+    width: 585px;
+    height: 1220px;
+    left: 756px;
+    top: 790px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+}
+.img-right-container > p {
+    width: 279px;
+    height: 80px;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #375C6F;
+}
+.img-right-container > img{
+    width: 585px;
+    height: 381px;
+    border-radius: 27px;
+}
+.img-right-container li {
+    width: 490px;
+    height: 195px;
+    font-size: 36px;
+    line-height: 39px;
+    color: #375C6F;
+    text-transform: capitalize;
+    margin-bottom: 10px; 
+} 
+.img-right-container  a {
+    color: #375C6F;
+}
+
+/*  */
+@media only screen and (max-width: 768px) {
+    .top-container{
+        position: absolute;
+        width: 80%;
+        height: 44%;
+        left: 10%;
+        top: 88px;
+    }
+    .top-container > div{
+        width: 79.46px;
+        height: 81px;
+        left: 14%;
+        top: 10%; 
+    }
+    .top-container > p:first-of-type {
+        width: 99%;
+        height: 30%;
+        left: -4%;
+        font-size: 20px;
+        margin-bottom: 15%;
+    }
+    .top-container >p:last-of-type {
+        width: 70%;
+        height: 60%;
+        bottom: 20%;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+    /* /////////// */
+    .top-right-container {
+        width: 90%;
+        height: 30%;
+        left:5%;
+        top: 55%;
+
+    }
+
+    .top-right-container > div:not(:first-child) {
+        position: relative;
+        width: 50%;
+        height: 0;
+        background: #d5dce1;
+        box-shadow: 0 0 2px #ffffff; 
+        border-top: 60px solid transparent; /* Adjust the height of the triangle */
+        border-bottom: 60px solid transparent; /* Adjust the height of the triangle */
+        border-right: 50px solid #FFFFFF; /* Adjust the color and width of the border */
+        justify-content:space-around;
+    }
+
+    .top-right-container > div:not(:first-child):nth-child(odd) {
+        margin-top: -10px; 
+        margin-bottom: -10px;
+        
+    }
+    
+    .top-right-container > div:first-child p {
+        font-size: 18px;
+    }
+    .top-right-container > div:not(:first-child) img {
+        width: 70%;
+
+      }
+      .top-right-container > div:not(:first-child) p {
+        width: 20%;
+        font-size: 14px;
+      }
+    
+    /*   /////////   */
+    .img-left-container {
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 130%;
+        gap: 10px;
+        
+    }
+    .img-left-container > p {
+        width: 30%;
+        height: 10%;
+        font-size: 20px;
+    }
+    .img-left-container > img {
+        width: 100%;
+        height: 40%;
+    }
+    /*      ////////     */
+    .img-right-container {
+        
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 300%;
+        gap: 10px;
+       
+    }
+    .img-right-container > p {
+        width: 60%;
+        height: 10%;
+        font-size: 22px;
+    }
+    .img-right-container > img{
+        width: 100%;
+        height: 50%;
+    }
+    .img-right-container li {
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 35px; 
+    } 
+    
+}

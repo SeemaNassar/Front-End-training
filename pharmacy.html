@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #FFFFFF">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seema Nassar">
+    <meta name="description" content="this is Pharmacy Website page.">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/SLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="pharmacy.css">
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #FFFFFF">
+
+    <header>
+        <nav id="navContainer"></nav>
+    </header>
+
+    <main>
+        <div class="top-container">
+            <div class="ellipse"></div>
+            <p>Smart Pharmacy</p>
+            <p>A website designed in the form of an electronic pharmacy
+                 that displays a group of medical materials and 
+                 information about them, in addition to the ability 
+                 to add them to the shopping cart.
+            </p>
+        </div>
+        <div class="top-right-container">
+            <div>
+                <img src="img/icons/Check_round_fill.svg" alt="checkBox" >
+                <p>Languages ​​used:</p>
+            </div>
+            <div>
+                <img src="img/css.png" alt="css">
+                <p>CSS</p>
+            </div>
+            <div>
+                <img src="img/php.png" alt="php">
+                <p>PHP</p>
+            </div>
+            <div>
+                <img src="img/htmll.png" alt="html">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="img/JS.png" alt="JS">
+                <p>Java Script</p>
+            </div>
+        </div>
+
+        <div class="img-left-container">
+            <p>Some Pages</p>
+            <img src="img/SP1.png" alt="pharmacy">
+            <img src="img/SP2.png" alt="pharmacy">
+            <img src="img/SP3.png" alt="pharmacy">
+            <img src="img/SP4.png" alt="pharmacy">
+            <img src="img/SP5.png" alt="pharmacy">
+        </div>
+        <div class="img-right-container">
+            <p>Login & Register UI</p>
+            <img src="img/SP6.png" alt="pharmacy">
+            <img src="img/SP7.png" alt="pharmacy">
+            <ul>
+                <li>This was my first website that I designed using web languages.</li>
+                <li>The <a href=" https://drive.google.com/file/d/1iuwYF1wVYSDzmwgdoXDAMW6jfd3bFUxN/view?usp=sharing" target="_blank">Demo.</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script> 
+    // Load the navbar content dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navContainer').innerHTML = html;
+        });
+</script>
+</html>
