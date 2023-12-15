@@ -1,9 +1,14 @@
-.top-container{
+main{
+    height: 2200px;
+}
+.ellipse {
     position: absolute;
-    width: 552px;
+  }
+.top-container{
+    position: relative;
+    width: 39%;
     height: 373px;
-    left: 48px;
-    top: 88px;
+    margin: 0 40px;
     background: #5F889D;
     border-radius: 51px;
 }
@@ -17,7 +22,7 @@
 .top-container > p:first-of-type {
     position: relative;
     width: 341.39px;
-    height: 143px;
+    height: 192px;
     left: 18px;
     font-weight: 400;
     font-size: 25px;
@@ -32,11 +37,10 @@
 }
 .top-container >p:last-of-type {
     position: relative;
-    width: 435.41px;
-    height: 237px;
+    width: 77%;
+    height: 210px;
     left: 82.15px;
     bottom: 20%;
-    /* top: 71px; */
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
@@ -46,16 +50,17 @@
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #F5F5F5;
+    
 }
 /*  /////   */
 .top-right-container {
-    position: absolute;
-    width: 543px;
+    position: relative;
+    width: 38%;
     height: 427px;
     left: 786px;
-    top: 133px;
+    top: -373px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
 }
 .top-right-container > div {
     display: flex;
@@ -71,7 +76,7 @@
     box-shadow: 0 0 2px #ffffff; 
     border-top: 60px solid transparent; /* Adjust the height of the triangle */
     border-bottom: 60px solid transparent; /* Adjust the height of the triangle */
-    border-right: 80px solid #FFFFFF; /* Adjust the color and width of the border */
+    border-right: 80px solid #ffffff; /* Adjust the color and width of the border */
     justify-content:space-around;
 }
 .top-right-container > div:nth-child(even) {
@@ -109,19 +114,21 @@
 
 /*   /////////   */
 .img-left-container {
-    position: absolute;
-    width: 600px;
-    height: 1670px;
+    position: relative;
+    width: 44%;
+    height: auto;
     left: 30px;
-    top: 560px;
+    top: -360px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    
+   
 }
 .img-left-container > p {
     width: 279px;
-    height: 80px;
+    height: 20px;
     font-size: 36px;
     line-height: 39px;
     display: flex;
@@ -130,25 +137,26 @@
     color: #375C6F;
 }
 .img-left-container > img {
-    width: 600px;
+    width: 95%;
     height: 300px;
     border-radius: 27px;
 }
 /*      ////////     */
 .img-right-container {
-    position: absolute;
+    position: relative;
     width: 585px;
-    height: 1220px;
-    left: 756px;
-    top: 790px;
+    height: auto;
+    left: 55%;
+    top: -1880px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center; 
+   
 }
 .img-right-container > p {
     width: 279px;
-    height: 80px;
+    height: 20px;
     font-size: 32px;
     line-height: 39px;
     display: flex;
@@ -157,70 +165,83 @@
     color: #375C6F;
 }
 .img-right-container > img{
-    width: 585px;
+    width: 95%;
     height: 381px;
     border-radius: 27px;
 }
 .img-right-container li {
     width: 490px;
-    height: 195px;
+    height: 185px;
     font-size: 36px;
     line-height: 39px;
     color: #375C6F;
     text-transform: capitalize;
     margin-bottom: 10px; 
+}
+.img-right-container li:last-of-type {
+    height: 50px;
 } 
 .img-right-container  a {
     color: #375C6F;
 }
 
 /*  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 911px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start; 
+    }
+    .top-container , .img-left-container , .img-right-container ,
+    .top-right-container {
+        left: 0;
+        top: 0;
+    } 
     .top-container{
-        position: absolute;
         width: 80%;
         height: 44%;
-        left: 10%;
-        top: 88px;
     }
     .top-container > div{
-        width: 79.46px;
-        height: 81px;
-        left: 14%;
-        top: 10%; 
+        width: 77px;
+        height: 77px;
+        left: 5%;
+        top: 5%;
+
     }
     .top-container > p:first-of-type {
-        width: 99%;
-        height: 30%;
-        left: -4%;
-        font-size: 20px;
+        width: 95%;
+        height: 15%;
+        left: -10%;
+        top: 15px;
+        font-size: 18px;
         margin-bottom: 15%;
     }
     .top-container >p:last-of-type {
-        width: 70%;
-        height: 60%;
-        bottom: 20%;
+        width: 75%;
+        height: 88%;
+        margin-bottom: 10%;
+        left: 10%;
         font-size: 14px;
         letter-spacing: 0.02em;
     }
     /* /////////// */
     .top-right-container {
         width: 90%;
-        height: 30%;
-        left:5%;
-        top: 55%;
+        height: auto;
+       margin: auto ;
+
 
     }
 
     .top-right-container > div:not(:first-child) {
-        position: relative;
         width: 50%;
         height: 0;
         background: #d5dce1;
         box-shadow: 0 0 2px #ffffff; 
-        border-top: 60px solid transparent; /* Adjust the height of the triangle */
-        border-bottom: 60px solid transparent; /* Adjust the height of the triangle */
-        border-right: 50px solid #FFFFFF; /* Adjust the color and width of the border */
+        border-top: 60px solid transparent; 
+        border-bottom: 60px solid transparent; 
+        border-right: 50px solid #FFFFFF; 
         justify-content:space-around;
     }
 
@@ -235,7 +256,6 @@
     }
     .top-right-container > div:not(:first-child) img {
         width: 70%;
-
       }
       .top-right-container > div:not(:first-child) p {
         width: 20%;
@@ -246,14 +266,13 @@
     .img-left-container {
         width: 90%;
         height: auto;
-        left: 5%;
-        top: 130%;
+        margin: auto;
         gap: 10px;
         
     }
     .img-left-container > p {
-        width: 30%;
-        height: 10%;
+        width: 55%;
+        height: 20px;
         font-size: 20px;
     }
     .img-left-container > img {
@@ -265,14 +284,13 @@
         
         width: 90%;
         height: auto;
-        left: 5%;
-        top: 300%;
+        margin: auto;
         gap: 10px;
        
     }
     .img-right-container > p {
-        width: 60%;
-        height: 10%;
+        width: 85%;
+        height: 20px;
         font-size: 22px;
     }
     .img-right-container > img{
@@ -284,7 +302,79 @@
         height: auto;
         font-size: 20px;
         line-height: 29px;
-        margin-bottom: 35px; 
+        margin-bottom: 30px; 
     } 
     
+}
+@media only screen and (min-width:565px) and (max-width:768px) {
+    .top-container > p:first-of-type {
+        width: 95%;
+        height: 15%;
+        left: -18%;
+        top: 15px;
+        font-size: 22px;
+        margin-bottom: 15%;
+    }
+    .top-container >p:last-of-type {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+    }
+}
+@media only screen and (max-width:360px) {
+    .top-container{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .top-container > div{
+        width: 57px;
+        height: 57px;
+        left: 5%;
+        top: 5%;
+
+    }
+    .top-container > p:first-of-type {
+        width: 90%;
+        height: 15%;
+        left: -8%;
+        top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 15%;
+    }
+    .top-container >p:last-of-type {
+        width: 85%;
+        height: 92%;
+        margin-bottom: 10%;
+        left: 5%;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:911px){
+    .top-container{
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+
+    .top-container > p:first-of-type {
+        width: 90%;
+        height: 15%;
+        left: -15%;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+    .top-container >p:last-of-type {
+        width: 85%;
+        height: 90%;
+        margin-bottom: 10%;
+        left: 5%;
+        font-size: 16px;
+    }
+
 }
